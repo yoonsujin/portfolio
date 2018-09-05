@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="./js/js.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style_2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>main</title>
+</head>
+
+<body>
+	<div class="wwrap"></div>
+	<div id="wrap">
+		<header>
+			<div id="header_left">
+				<img src="./img/logo.png" alt="logo">
+			</div>
+
+			<div id="header_right">
+				<ul>
+					<li>개인 <img src="./img/bul_footer_list.png" alt="w">
+						<ul>
+							<li>조회</li>
+							<li>이체</li>
+							<li>공과금</li>
+							<li>예금/골드</li>
+							<li>펀드</li>
+							<li>대출</li>
+							<li>신탁</li>
+							<li>ISA</li>
+							<li>신탁</li>
+							<li>보험/공채</li>
+							<li>뱅킹관리</li>
+						</ul>
+					</li>
+					<li>기업 <img src="./img/bul_footer_list.png" alt="w">
+						<ul>
+							<li>조회</li>
+							<li>이체</li>
+							<li>공과금</li>
+							<li>예금</li>
+							<li>펀드</li>
+							<li>대출</li>
+							<li>신탁</li>
+							<li>보험</li>
+							<li>자금관리</li>
+							<li>B2B</li>
+							<li>기업서비스</li>
+							<li>뱅킹관리</li>
+
+						</ul>
+
+					</li>
+					<li>추천상품 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>카드 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>자산관리 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>부동산 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li class="fulldown">전체서비스 <img src="./img/bul_footer_list.png" alt="w">
+						<ul>
+							<li>금융서비스
+								<ul>
+									<li>외환</li>
+									<li>퇴직연금</li>
+									<li>에스크로이체</li>
+									<li>골든라이프뱅킹</li>
+									<li>자동이체통합관리</li>
+									<li>보안센터</li>
+									<li>공인인증센터</li>
+									<li>kb마이머니</li>
+									<li>공인인증센터</li>
+									<li>kb마이머니</li>
+									<li>star CMS</li>
+								</ul>
+							</li>
+							<li>특화서비스
+								<ul>
+									<li>주택청약</li>
+									<li>국민주택채권</li>
+									<li>주택도시기금</li>
+									<li>스마트금융서비스</li>
+								</ul>
+							</li>
+							<li>멤버십서비스
+								<ul>
+									<li>KB고객우대제도</li>
+									<li>GOLD&WISE</li>
+								</ul>
+							</li>
+							<li>KB와 함께
+								<ul>
+									<li>은행소개</li>
+									<li>지점안내</li>
+									<li>고객센터</li>
+									<li>KB정보광장</li>
+									<li>이벤트</li>
+									<li>희망금융클리닉</li>
+									<li>나라사랑서비스</li>
+									<li>KB굿</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="global">global<img src="./img/bul_footer_list.png" alt="w">
+						<ul class="global_ul">
+							<li><img src="./img/icon_japan.png" alt="icon_japan" />Japan</li>
+							<li><img src="./img/icon_newzealand.png" alt="icon_newzealand" />New Zealand</li>
+							<li><img src="./img/icon_china.png" alt="icon_china" />China</li>
+							<li><img src="./img/icon_hongkong.png" alt="icon_hongkong" />Hong Kong</li>
+							<li><img src="./img/icon_uk.png" alt="icon_uk" />UK</li>
+							<li><img src="./img/icon_cambodia.png" alt="icon_cambodia" />Camdodia</li>
+							<li><img src="./img/icon_vietnam.png" alt="icon_vietnam" />Vietnam</li>
+						</ul>
+					</li>
+					<li><i class="fa fa-search" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+		</header>
+
+		<section>
+
+				<div id="img_slide">
+					<input type="radio" id="btn_1" name="btn" checked />
+					<label for="btn_1" class="btn1"></label>
+					<input type="radio" id="btn_2" name="btn"  />
+					<label for="btn_2" class="btn2"></label>
+					<input type="radio" id="btn_3" name="btn"  />
+					<label for="btn_3" class="btn3"></label>
+					<ul>
+						<li class="img1"></li>
+						<li class="img2"></li>
+						<li class="img3"></li>
+					</ul>
+				</div>
+		</section>
+
+
+		<article class="login">
+			<div id="login_cover">
+				<ul>
+					<li class="login">로그인 · </li>
+					<li class="login">공인인증센터 · </li>
+					<li class="login">보안센터 · </li>
+					<li>잔여금조회</li>
+					<li>계좌이체</li>
+					<li>빠른조회</li>
+					<li>고객우대제도</li>
+					<li>소비자정보포탈</li>
+					<li>상담신청</li>
+					<li>상품공시실</li>
+				</ul>
+			</div>
+			<div class="ar_button">
+				<i class="fa fa-cog" aria-hidden="true"></i> 메뉴설정
+			</div>
+		</article>
+
+
+
+
+		<article class="event">
+			<table>
+				<tr>
+					<th> > 새소식</th>
+				</tr>
+				<tr>
+					<td>타기관 스마트 OTP 이용방식 개선 시행 안내</td>
+				</tr>
+				<tr>
+					<td>「영업점 방문 예약 서비스」 안내</td>
+				</tr>
+				<tr>
+					<td>통장(카드) 불법 매매·양도 급증에 따른 주의 안내</td>
+				</tr>
+				<tr>
+					<td>통장(카드) 불법 매매·양도 급증에 따른 주의 안내</td>
+				</tr>
+
+			</table>
+
+			<table>
+				<tr>
+					<th> > 이벤트 </th>
+				</tr>
+				<tr>
+					<td>KB스타알림 가입하고 내가 고른 경품 받자!</td>
+				</tr>
+				<tr>
+					<td>KB Healing Summer 환전 페스티벌</td>
+				</tr>
+				<tr>
+					<td>나만의 Secret 대출 「KB리브간편대출」개편기념 이벤트</td>
+				</tr>
+				<tr>
+					<td>「TDF로 '척척' 굴러가는 연금 만들기」이벤트</td>
+				</tr>
+			</table>
+			<div id="event_1">
+			</div>
+		</article>
+
+
+		<article class="service">
+			<div class="service_1">
+				<img src="./img/img_0226_list02_tit_0620.gif" alt="service1">
+				<p>KB Star통장, KB樂Star통장,<br/> KB국군장병우대통장이 있으면<br/> 우대이율 연0.3%<br/></p>
+				<img src="./img/bg_recom_prod1_0515.jpg" alt="">
+
+			</div>
+			<div class="service_1">
+				<img src="./img/img_prod_list01_tit.gif" alt="service2">
+				<p>Happy BTSday우대이율에<br/> BTS전용관까지!
+				</p>
+				<img src="./img/bg_recom_prod2_0619.jpg" alt="service3">
+			</div>
+			<div class="service_1">
+				<img src="./img/img_service_list01_tit_0416.gif" alt="service4">
+				<p>각 금융기관에 흩어진<br/> 나의 자산을 한 곳에 모아서<br/> 관리해보세요.
+					<br/>
+				</p>
+
+			</div>
+			<div class="service_1">
+				<img src="./img/img_service_list02_tit.gif" alt="service5">
+				<p>KB금융그룹 통합포인트와<br/> 제휴사 포인트를 모아모아<br/> 현금처럼 사용하세요.<br/></p>
+			</div>
+		</article>
+
+		<article class="service_2">
+			<div class="service_2_2">
+				<div class="service_2_2_header">
+					<img src="./img/img_accident_tit.png" alt="service_header_1">
+				</div>
+				<div class="service_2_2_title">
+					<img src="./img/img_accident_list01_tit.gif" alt="service_header_1">
+				</div>
+				<div class="service_2_2_rev">
+					<img src="./img/img_accident_list01_txt.gif" alt="service_header_1">
+				</div>
+			</div>
+
+			<div class="service_2_2">
+				<div class="service_2_2_header"></div>
+				<div class="service_2_2_title">
+					<img src="./img/img_accident_list02_tit.gif" alt="service_header_21">
+				</div>
+				<div class="service_2_2_rev">
+					<img src="./img/img_accident_list02_txt.gif" alt="service_header_22">
+				</div>
+			</div>
+
+			<div class="service_2_2">
+				<div class="service_2_2_header"></div>
+				<div class="service_2_2_title">
+					<img src="./img/img_accident_list03_tit.gif" alt="service31">
+				</div>
+				<div class="service_2_2_rev">
+					<img src="./img/img_accident_list03_txt.gif" alt="service32">
+				</div>
+			</div>
+
+			<div class="service_2_2">
+				<div class="service_2_2_header">
+					<img src="./img/img_protect_tit.png" alt="service33">
+				</div>
+
+				<div class="service_2_2_title">
+					<img src="./img/img_protect_list01_tit.gif" alt="service34">
+				</div>
+				<div class="service_2_2_title">
+					<img src="./img/img_protect_list02_tit.gif" alt="service35">
+				</div>
+				<div class="service_2_2_title">
+					<img src="./img/img_protect_list04_tit.gif" alt="service36">
+				</div>
+			</div>
+		</article>
+
+		<article class="kb_app">
+			<div class="kb_app_header">
+				<img src="./img/img_total.gif" alt="kb_app">
+			</div>
+
+			<div class="kb_app_rev">
+				<div class="kb_app_rev_1">
+					<img src="./img/img_mobank.gif" alt="img_mobank">
+				</div>
+				<div class="kb_app_rev_1">
+					<img src="./img/img_mobiz.gif" alt="img_mobiz">
+				</div>
+				<div class="kb_app_rev_1">
+					<img src="./img/img_momoney.gif" alt="img_momoney">
+				</div>
+				<div class="kb_app_rev_1">
+					<img src="./img/img_moalarm.gif" alt="img_moalarm">
+				</div>
+				<div class="kb_app_rev_1">
+					<img src="./img/img_liiv.gif" alt="img_liiv">
+				</div>
+				<div class="kb_app_rev_1">
+					<img src="./img/img_liivmate.gif" alt="img_liivmate">
+				</div>
+				<div class="kb_app_rev_1">
+					<img src="./img/img_estate.gif" alt="img_estate">
+				</div>
+				<div class="kb_app_rev_1">
+					<img src="./img/img_liivtong.gif" alt="img_liivtong">
+				</div>
+				<div class="kb_app_rev_1">
+					<img src="./img/img_liivtong.gif" alt="img_liivtong">
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="foot_header">
+				<ul>
+					<li>이용상담 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>보안프로그램 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>사고신고 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>보호금융상품등록부 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>전자민원접수 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>개인정보처리방침 <img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>경영공시<img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>그룹 내 고객정보 제공안내<img src="./img/bul_footer_list.png" alt="w"></li>
+					<li>스튜어드십 코드<img src="./img/bul_footer_list.png" alt="w"></li>
+				</ul>
+			</div>
+			<div class="foot_bu">
+				<div class="foot_butten">KB금융그룹네트워크</div>
+				<div class="foot_butten">
+					<i class="fa fa-tablet" aria-hidden="true"></i> 대표전화 1588-9999</div>
+				<div class="foot_butten">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i> 이메일상담
+				</div>
+				<div class="foot_butten">
+					<i class="fa fa-commenting-o" aria-hidden="true"></i> 채팅상담(24시간 265일)</div>
+				<div class="foot_butten">비교조회서비스</div>
+
+			</div>
+
+		</footer>
+	</div>
+
+
+			<article id="login_setting" class="modal">
+				<div id="login_setting_header">
+					<h1>빠른 메뉴 설정</h1>
+					<p>아이콘 6개를 선택하신 후 저장 버튼을 누르세요</p>
+				</div>
+				<div id="login_setting_check_box">
+					<div class="check_box">
+						<input type="checkbox" id="check">
+						<label for="check"></label> 전예금조회
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check2">
+						<label for="check2"></label> 계좌이체
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check3">
+						<label for="check3"></label> 빠른조회
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check4">
+						<label for="check4"></label> 고객우대제도
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check5">
+						<label for="check5"></label> 소비자정보포털
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check6">
+						<label for="check6"></label> 휴면계좌조회
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check7">
+						<label for="check7"></label> 인터넷대출
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check8">
+						<label for="check8"></label> 노후설계
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check9">
+						<label for="check9"></label> 지점안내
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check10">
+						<label for="check10"></label> 환율조회
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check11">
+						<label for="check11"></label> KB부동산
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check12">
+						<label for="check12"></label> 고객상담FAQ
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check13">
+						<label for="check13"></label> 공과금납부
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check14">
+						<label for="check14"></label> 해외은행송금
+					</div>
+					<div class="check_box">
+						<input type="checkbox" id="check15">
+						<label for="check15"></label> 퇴직연금
+					</div>
+
+				</div>
+				<div id="login_setting_true">
+					<div id="true">
+
+						<button type="reset">
+							<i class="fa fa-check-circle" aria-hidden="true"></i>
+							초기화
+						</button>
+
+						<button type="submit">
+							<i class="fa fa-repeat" aria-hidden="true"></i>
+							저장
+						</button>
+						<button type="button" id="btn-close">
+							<i class="fa fa-times-circle-o" aria-hidden="true"></i>
+							닫기
+						</button>
+
+					</div>
+
+				</div>
+
+			</article>
+</body>
+
+</html>

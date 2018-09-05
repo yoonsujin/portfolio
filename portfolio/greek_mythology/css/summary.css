@@ -1,0 +1,284 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Anton|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture|Gothic+A1');
+/* font-family: 'Black And White Picture', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* 스크롤바색깔바꾸고싶따.. */
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  background-image: url(../img/header.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-color: rgba(33, 21, 2, 1);
+  position: relative;
+}
+
+header>#logo {
+  position: absolute;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 5px;
+  font-size: 80px;
+  color: #fff;
+  top: 50%;
+  transform: translate(3%, -50%);
+}
+
+section {
+  background: url(../img/22.jpg) repeat;
+  width: 100%;
+  height: 80%;
+  position: relative;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+.text {
+  width: 70%;
+  height: 82%;
+  background-color: #fff9e8;
+  border: 5px double #c6702a;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  border-radius: 1%;
+  right: 5%;
+  position: absolute;
+  margin-top: 5%;
+}
+
+.text a {
+  font-weight: bold;
+  color: #333;
+}
+
+.patt {
+  width: 70%;
+  height: 8%;
+  background: url(../img/Untitled-1.jpg) repeat;
+  background-size: 100% auto;
+  position: absolute;
+  right: 5%;
+  margin-top: 0.8%;
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 5px 5px 3px rgba(62, 47, 21, 1);
+}
+
+.text p {
+  font-family: 'Gothic A1', sans-serif;
+  line-height: 28px;
+  color: #444;
+  font-size: 15px;
+  width: 80%;
+  margin: 3%;
+}
+
+#source {
+  width: 40%;
+  height: 30%;
+  float: right;
+  margin: 0;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+#source>p {
+  line-height: 25px;
+  color: #444;
+  font-size: 12px;
+  width: 80%;
+  font-weight: bold;
+  margin: 0;
+}
+
+aside {
+  float: left;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+}
+
+#aside_cover {
+  margin: 0 auto;
+  background-color: rgba(136, 83, 38, 0.6);
+  width: 70%;
+  height: 72%;
+  margin-top: 3%;
+  background: url(../img/aside2.png)no-repeat center / 100% 100%;
+}
+
+#aside_cover>#_12 {
+  width: 100%;
+  height: 10%;
+}
+
+#aside_cover h1 {
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  height: 100%;
+  padding-top: 15px;
+  font-family: 'Poiret One', cursive;
+}
+
+#aside_cover h1:hover {
+  padding-top: 8px;
+}
+
+#aside_cover>#menu {
+  width: 90%;
+  margin: 0 auto;
+  height: 80%;
+}
+
+#menu>ul {
+  margin-left: 5%;
+  font-family: 'Poiret One';
+  font-size: 15px;
+}
+
+#menu>ul>li {
+  line-height: 40px;
+  margin-left: 1%;
+  font-size: 15px;
+}
+
+#menu>ul>li:hover {
+  background-color: rgba(52, 52, 52, 0.5);
+  padding-left: 3px;
+  padding-bottom: 2px;
+}
+
+#menu>ul>li:hover>ul>li {
+  /*display: block;
+    padding-left: 3px;*/
+}
+
+#menu>ul>li>a {
+  color: #fff;
+}
+
+#menu>ul>li>ul>li {
+  /*  display: none;*/
+  line-height: 23px;
+  margin-bottom: 5%;
+}
+
+#menu>ul>li>ul>li:hover>a {
+  color: black;
+}
+
+#menu>ul>li>ul>li>a {
+  color: #fff;
+  margin-left: 10px;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width:760px) and (max-width:1072px) {
+  header>#logo {
+    font-size: 50px;
+  }
+  .patt {
+    display: none;
+  }
+  aside {
+    width: 25%;
+  }
+  #aside_cover {
+    width: 80%;
+  }
+  #menu>ul>li {
+    font-size: 14px;
+  }
+  #menu>ul>li:hover {
+    font-size: 14px;
+  }
+  .text {
+    height: 90%;
+    margin-top: 1%;
+  }
+  .text p {
+    width: 92%;
+    font-size: 14px;
+  }
+  #source {
+    width: 62%;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:760px) {
+  header>#logo {
+    font-size: 35px;
+  }
+  .patt {
+    /* display: none; */
+    width: 91%;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    font-size: 25px;
+  }
+  #aside_cover {
+    display: none;
+  }
+  .text {
+    height: 85%;
+    margin-top: 9%;
+    width: 91%;
+  }
+  .text p {
+    width: 92%;
+    font-size: 14px;
+  }
+  #source {
+    width: 62%;
+  }
+}
+@media screen and (min-width:200px) and (max-width:500px) {
+  header>#logo {
+    font-size: 35px;
+  }
+  .patt {
+    display: none;
+  }
+  #aside_cover {
+    display: none;
+  }
+  .text {
+    height: 94%;
+    margin-top: 3%;
+    width: 91%;
+  }
+  .text p {
+    width: 92%;
+    font-size: 14px;
+  }
+  #source {
+    width: 62%;
+  }
+}

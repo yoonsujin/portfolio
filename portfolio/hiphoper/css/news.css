@@ -1,0 +1,380 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+/* font-family: 'Nanum Gothic', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#section_head {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../images/main.jpg) no-repeat center / 100% 100%;
+  animation: head 1s 0.5 both;
+
+
+}
+
+@keyframes head {
+  0% {
+    background: url(../images/main.jpg) no-repeat center / 100% 100%;
+  }
+  100% {
+    background: black url(../images/456.png) no-repeat center / 100% 100%;
+  }
+}
+
+#section_head .logo {
+  color: #fff;
+  float: left;
+  font-size: 46px;
+  position: fixed;
+  padding: 1%;
+  font-weight: bold;
+  animation: logo 2s 0.5 forwards;
+    z-index: 5555;
+}
+@keyframes logo {
+  0% {
+    top: 68%;
+    left: 16%;
+    transform: rotate(-30deg);
+  }
+  100% {
+    top: -15%;
+    left: 0%;
+    transform: rotate(0);
+    padding: 1%;
+  }
+}
+
+
+#section_head .logo ul.new_menu {
+  float: left;
+  position: fixed;
+  top: 90%;
+  left: 220px;
+  transform: rotate(-88deg);
+  width: 86%;
+  height: 32%;
+  color: #fff;
+}
+ul.new_menu li.a{
+  width: 100%;
+  font-size: 19px;
+  text-indent: 32%;
+}
+
+
+#section_head .logo a {
+  width: 110%;
+  height: 110%;
+  color: #fff;
+  /* border: 1px solid red; */
+
+}
+
+#section_head .header {
+  float: right;
+  width: 904px;
+  height: 408px;
+  background-color: #000;
+  transform: rotate(30deg)scale(1);
+  position: fixed;
+  top: -167px;
+  right: -182px;
+  /* display: none; */
+  animation: header 2s 0.5 forwards;
+}
+
+@keyframes header {
+  0% {
+    transform: rotate(30deg) scale(1);
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(30deg) scale(8);
+    display: none;
+    opacity: 0;
+    left: -200%;
+  }
+}
+
+#section_head .header .logo {
+  color: #fff;
+  float: left;
+  font-size: 46px;
+  position: fixed;
+  top: 68%;
+  left: 16%;
+  transform: rotate(-30deg);
+  font-weight: bold;
+}
+
+#section_head input {
+  display: block;
+  width: 318px;
+  float: right;
+  font-size: 26px;
+  position: fixed;
+  top: 34%;
+  left: 39%;
+  transform: rotate(-30deg);
+}
+
+#section_head ul {
+  float: left;
+  position: fixed;
+  top: 153px;
+  left: 402px;
+  transform: rotate(-91deg);
+  width: 25%;
+  color: #fff;
+  font-size: 19px;
+}
+
+#section_head ul li {
+  border-top: 2px solid #fff;
+  height: 71px;
+  transform: rotate(62deg);
+  text-indent: 47px;
+}
+
+#section_head ul li::after {
+    content: '';
+    width: 20%;
+    height: 44%;
+    position: absolute;
+    left: 3%;
+    top: 0%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: skewX(62deg);
+    transition: 0.2s;
+    opacity: 0;
+
+}
+#section_head ul li:hover::after {
+animation: after 1s 0.7 both;
+}
+@keyframes after {
+  0%{
+    opacity: 1;
+  }
+  1%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+#section_head ul li a {
+  color: #fff;
+  font-size: 19px;
+}
+
+.icon {
+  color: #fff;
+  float: left;
+  font-size: 38px;
+  position: absolute;
+  top: 6%;
+  left: 90%;
+  transform: rotate(1deg);
+}
+
+#main {
+  position: relative;
+  width: 55%;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 25%);
+}
+
+#main .main_header {
+  width: 100%;
+  height: 10%;
+  float: right;
+}
+
+#main .main_header p {
+  font-size: 30px;
+  letter-spacing: 3px;
+  ;
+  color: #fff;
+  float: right;
+}
+
+.main_body {
+  float: right;
+  height: 90%;
+  width: 100%;
+}
+
+.main_body .main_body_img {
+  width: 30%;
+  height: 40%;
+  display: block;
+  float: left;
+  margin-top: 3.33%;
+  margin-left: 2.5%;
+  position: relative;
+}
+
+.main_body #img1 {
+  background: url(../images/img1.jpg) no-repeat center / 100% 100%;
+}
+
+.main_body #img1::after {
+  content: '"[NEWS] 아식스타이거, 젤 사가 공개"';
+  position: absolute;
+  width: 90%;
+  height: 86%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5%;
+  font-size: 26px;
+  overflow: hidden;
+  display: none;
+}
+
+.main_body #img1:hover::after {
+  display: block;
+}
+
+.main_body #img2 {
+  background: url(../images/img2.jpg) no-repeat center / 100% 100%;
+}
+
+.main_body #img2::after {
+  content: '[NEWS] 마이클 잭슨 x 마크 론슨, 신곡 출시';
+  position: absolute;
+  width: 90%;
+  height: 86%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5%;
+  font-size: 26px;
+  overflow: hidden;
+  display: none;
+}
+
+.main_body #img2:hover::after {
+  display: block;
+}
+
+.main_body #img3 {
+  background: url(../images/img3.jpg) no-repeat center / 100% 100%;
+}
+
+.main_body #img3::after {
+  content: '"[NEWS] 나이키, 새로운 컬러의 에어 베이퍼맥스 95 출시"';
+  position: absolute;
+  width: 90%;
+  height: 86%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5%;
+  font-size: 26px;
+  overflow: hidden;
+  display: none;
+}
+
+.main_body #img3:hover::after {
+  display: block;
+}
+
+.main_body #img4 {
+  background: url(../images/img4.jpg) no-repeat center / 100% 100%;
+}
+
+.main_body #img4::after {
+  content: '"[NEWS] 아디다스, Yung-96 출시"';
+  position: absolute;
+  width: 90%;
+  height: 86%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5%;
+  font-size: 26px;
+  overflow: hidden;
+  display: none;
+}
+
+.main_body #img4:hover::after {
+  display: block;
+}
+
+.main_body #img5 {
+  background: url(../images/img5.jpg) no-repeat center / 100% 100%;
+}
+
+.main_body #img5::after {
+  content: '"[NEWS] 반스, 하우스 오브 반스 서울 2018 개최"';
+  position: absolute;
+  width: 90%;
+  height: 86%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5%;
+  font-size: 26px;
+  overflow: hidden;
+  display: none;
+}
+
+.main_body #img5:hover::after {
+  display: block;
+}
+
+.main_body #img6 {
+  background: url(../images/img6.jpg) no-repeat center / 100% 100%;
+}
+
+.main_body #img6::after {
+  content: '"[NEWS] 나이키 x 슈프림, 2018 F/W 가토 출시"';
+  position: absolute;
+  width: 90%;
+  height: 86%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5%;
+  font-size: 26px;
+  overflow: hidden;
+  display: none;
+}
+
+.main_body #img6:hover::after {
+  display: block;
+}
+
+#main i {
+  position: fixed;
+  font-size: 20px;
+  bottom: -8%;
+  left: 50%;
+  color: #fff;
+  animation: double 1s backwards infinite;
+}
+
+@keyframes double {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
